@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Unearth Design System: Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="guide-files/forms.css">
+    <link rel="stylesheet" href="guide-files/fonts.css">
+</head>
+<body>
+
+	<header>
+		<span class="unearth-logo">U</span>
+		<span class="title">Unearth Design System: Forms</span>
+	</header>
+	<div class="container">
+		<div class="group-header">Forms</div>		
+		<section>
+			<div class="description">
+				<div class="desc-header">Container:</div>
+				<ul>
+					<li>Background color should contrast with form components, e.g. $slate5</li>
+					<li>Max-width may vary depending on context, but in general min-width should not be less than 280px</li>
+					<li>Minimum padding of 24px within container helps to minimize cramping</li>
+					<li>If height of form exceeds viewport height, submit button should pinned to bottom and form content scrolls behind</li>
+				</ul>
+				<div class="desc-header">Inputs:</div>
+				<ul>
+					<li>Label details: 
+						<ul>
+							<li>13px/1/500 Museo Sans Rounded $slate2</li>
+							<li>letter-spacing: 0.25px</li>
+							<li>margin-bottom: 4px</li>
+							<li>short label can be inset to conserve vertical space</li>
+						</ul>
+					</li>
+					<li>Input details: 
+						<ul>
+							<li>16px/1/500 Museo Sans Rounded $slate2</li>
+							<li>placeholder text: $slate4</li>
+							<li>optional tip text: 13/1/300, margin-top: 4px</li>
+							<li>if input fails validation onBlur, display error state (label and border color: $red1) and message (replaces tip text if any)</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="desc-header">Selects:</div>
+				<ul>
+					<li>Label details:
+						<ul>
+							<li>13px/1/500 Museo Sans Rounded $slate2</li>
+							<li>letter-spacing: 0.25px</li>
+							<li>margin-bottom: 4px</li>
+						</ul>
+					<li>Select details: 
+						<ul>
+							<li>16px/1/500 Museo Sans Rounded $slate2</li>
+							<li>placeholder text: $slate4</li>
+							<li>use chevron-down-circle icon as select control affordance</li>
+							<li>custom select options can include icons</li>
+						</ul>
+					</li>	
+				</ul>
+				<div class="desc-header">Segmented Controls:</div>
+				<ul>
+					<li>Control Details:
+						<ul>
+							<li>Inset Label: 16px/1/500 Museo Sans Rounded $slate3</li>
+							<li>background-color: $slate, box-shadow: inset 0 0 12px rgba(0,0,0,0.075), inset 0 0 1px 1px rgba(0,0,0,0.05)</li>
+							<li>Active State: background-color $teal1</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="desc-header">Text Areas:</div>
+				<ul>
+					<li>Label details: 
+						<ul>
+							<li>13px/1/500 Museo Sans Rounded $slate2</li>
+							<li>letter-spacing: 0.25px</li>
+							<li>margin-bottom: 4px</li>
+						</ul>
+					</li>
+					<li>Text Area details: 
+						<ul>
+							<li>16px/1/500 Museo Sans Rounded $slate2</li>
+							<li>placeholder text: $slate4</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="desc-header">Buttons:</div>
+				<ul>
+					<li>Form buttons should never be out of the viewport, so wrap them in a form footer that is pinned to the bottom of the container</li>
+					<li>Form footer should have visual contrast with form container, background-color: arctic2, box-shadow serves as a scrolling affordance</li>
+					<li>Single Action: 
+						<ul>
+							<li>Primary button styling</li>
+							<li>center align button in form footer</li>
+						</ul>
+					</li>
+					<li>Primary/Secondary button pair: 
+						<ul>
+							<li>Constructive action on the right: primary button styling</li>
+							<li>Destructive or Cancel action on the left: secondary button styling</li>
+						</ul>
+					</li>
+				</ul>		
+			</div>
+			<div class="example">
+				<div class="form single-action">
+					<div class="form-scroll">
+						<!-- start copy -->
+						<div class="detail-block standard-input">
+							<label>Input Label</label>
+							<input type="text" placeholder="Optional placeholder text" />
+							<div class="form-prompt">Optional tip text</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block standard-input">
+							<label class="input-error">Input Label</label>
+							<input type="text" class="input-error" />
+							<div class="form-error">Input does not pass validation message</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<label class="inset-label">ID</label>
+							<input type="text" class="has-inset-label" />
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<label>Select Label</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="Selected Option" selected="">Selected Option</option>
+									<option value="Option">Option</option>
+									<optgroup label="Option Group Label">
+										<option value="Option">Option</option>
+										<option value="Option">Option</option>
+										<option value="Option">Option</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<label>Segmented Control: 2 options</label>
+							<div class="radio two-opts">
+								<div class="radio-opt active">Option A</div>
+								<div class="radio-opt">Option B</div>
+							</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<label>Segmented Control: 3 options</label>
+							<div class="radio three-opts">
+								<div class="radio-opt active">Option A</div>
+								<div class="radio-opt">Option B</div>
+								<div class="radio-opt">Option C</div>
+							</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<label>Text Area Label</label>
+							<textarea placeholder="Optional placeholder text"></textarea>
+						</div>
+						<!-- end copy -->	
+					</div>
+					<!-- start copy -->
+					<div class="submit-button">
+						<button type="submit" class="btn btn-primary btn-pill">
+							<div class="spinner"></div>
+							<span class="btn-label">Single Action</span>
+						</button>
+					</div>	
+					<!-- end copy -->		
+				</div>
+				<br /><br /><br /><br />
+				<div class="form form-alt">
+					<div class="form-scroll">
+						<!-- start copy -->
+						<div class="detail-block standard-input">
+							<label>Input Label</label>
+							<input type="text" />
+						</div>
+						<!-- end copy -->				
+						<!-- start copy -->
+						<div class="detail-block standard-input">
+							<label>Input Label</label>
+							<input type="text" />
+						</div>
+						<!-- end copy -->
+					</div>				
+					<!-- start copy -->
+					<div class="btn-pair">
+						<div class="btn btn-secondary btn-pill">Secondary</div>
+						<div class="submit-button ">
+							<button type="submit" class="btn btn-primary btn-pill   ">
+								<div class="spinner"></div>
+								<span class="btn-label">Primary</span>
+							</button>
+						</div>
+					</div>	
+					<!-- end copy -->
+				</div>	
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>

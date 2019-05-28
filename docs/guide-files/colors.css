@@ -1,0 +1,394 @@
+body, html { font-size: 100%; 	padding: 0; margin: 0; box-sizing: border-box;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* basic styles */
+
+body {
+	color: #576573;
+	background: #E2E5E8;
+	min-height: 100vh;
+	font-family: 'museo sans rounded';
+}
+
+a {
+	color: #576573;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7c8e9d;
+}
+
+i {
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header {
+	width: 100%;
+	height: 64px;
+	background-color: #FAFCFF;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.025);
+	text-align: center;
+}
+
+.unearth-logo {
+	font-family: 'unearth';
+	font-size: 36px;
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+}
+
+.title {
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.container {
+    padding: 48px;
+}
+
+.group-header {
+    font-family: 'LubalinGraphStd-Demi';
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.margin-top-24 {
+    margin-top: 24px;
+}
+
+.margin-top-36 {
+    margin-top: 36px;
+}
+
+.color-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 48px;
+}
+
+.color-group li {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.swatch {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.05); 
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: 8px auto;
+}
+
+.variable,
+.hex {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.slate1 .swatch {
+    background-color: #303840;
+}
+
+.slate2 .swatch {
+    background-color: #576573;
+}
+
+.slate3 .swatch {
+    background-color: #7c8e9d;
+}
+
+.slate4 .swatch {
+    background-color: #b7bec5;
+}
+
+.slate5 .swatch {
+    background-color: #e2e5e8;
+}
+
+.arctic1 .swatch {
+    background-color: #fafcff;
+}
+
+.arctic2 .swatch {
+    background-color: #f0f2f5;
+}
+
+.teal1 .swatch {
+    background-color: #109494;
+}
+
+.teal2 .swatch {
+    background-color: #40a9a9;
+}
+
+.teal3 .swatch {
+    background-color: #70bfbf;
+}
+
+.teal4 .swatch {
+    background-color: #a0d4d4;
+}
+
+.teal5 .swatch {
+    background-color: #eff7fa;
+}
+
+.teal6 .swatch {
+    background-color: #2fc4c4;
+}
+
+.red1 .swatch {
+    background-color: #f31e3c;
+}
+
+.red2 .swatch {
+    background-color: #f54b63;
+}
+
+.red3 .swatch {
+    background-color: #f8788a;
+}
+
+.red4 .swatch {
+    background-color: #faa5b1;
+}
+
+.red5 .swatch {
+    background-color: #fdd2d8;
+}
+
+.blue1 .swatch {
+    background-color: #029ac0;
+}
+
+.blue2 .swatch {
+    background-color: #35aecd;
+}
+
+.blue3 .swatch {
+    background-color: #67c2d9;
+}
+
+.blue4 .swatch {
+    background-color: #9ad7e6;
+}
+
+.blue5 .swatch {
+    background-color: #ccebf2;
+}
+
+.yellow1 .swatch {
+    background-color: #d9aa5a;
+}
+
+.yellow2 .swatch {
+    background-color: #f2bf66;
+}
+
+.yellow3 .swatch {
+    background-color: #f2d096;
+}
+
+.yellow4 .swatch {
+    background-color: #f3dcb4;
+}
+
+.yellow5 .swatch {
+    background-color: #f9edd9;
+}
+
+.purple1 .swatch {
+    background-color: #3a3c5e;
+}
+
+.purple2 .swatch {
+    background-color: #434566;
+}
+
+.purple3 .swatch {
+    background-color: #595c91;
+}
+
+.purple4 .swatch {
+    background-color: #878abd;
+}
+
+.purple5 .swatch {
+    background-color: #a6a8ce;
+}
+
+.purple6 .swatch {
+    background-color: #df9fff;
+}
+
+.brown1 .swatch {
+    background-color: #544435;
+}
+
+.brown2 .swatch {
+    background-color: #6d5845;
+}
+
+.brown3 .swatch {
+    background-color: #918274;
+}
+
+.brown4 .swatch {
+    background-color: #b6aba2;
+}
+
+.brown5 .swatch {
+    background-color: #dad5d1;
+}
+
+.green1 .swatch {
+    background-color: #05b08d;
+}
+
+.green2 .swatch {
+    background-color: #29c6a4;
+}
+
+.core-drawing1 .swatch {
+    background-color: #ffffff;
+}
+
+.core-drawing2 .swatch {
+    background-color: #e84495;
+}
+
+.core-drawing3 .swatch {
+    background-color: #eb342e;
+}
+
+.core-drawing4 .swatch {
+    background-color: #fff036;
+}
+
+.core-drawing5 .swatch {
+    background-color: #f69831;
+}
+
+.core-drawing6 .swatch {
+    background-color: #1073b7;
+}
+
+.core-drawing7 .swatch {
+    background-color: #944095;
+}
+
+.core-drawing8 .swatch {
+    background-color: #149267;
+}
+
+.sewer-theme1 .swatch {
+    background-color: #07B050;
+}
+
+.sewer-theme1-form .swatch {
+    background-color: #057f3a;
+}
+
+.sewer-theme2 .swatch {
+    background-color: #02B0F0;
+}
+
+.sewer-theme2-form .swatch {
+    background-color: #028bbd;
+}
+
+.sewer-theme3 .swatch {
+    background-color: #EB7826;
+}
+
+.sewer-theme3-form .swatch {
+    background-color: #D05D0B;
+}
+
+.sewer-theme4 .swatch {
+    background-color: #D0021B;
+}
+
+.sewer-tools1 .swatch {
+    background-color: #ffffff;
+}
+
+.sewer-tools2 .swatch {
+    background-color: #7c8e9d;
+}
+
+.sewer-tools3 .swatch {
+    background-color: #576573;
+}
+
+.sewer-tools4 .swatch {
+    background-color: #303840;
+}
+
+.sewer-tools5 .swatch {
+    background-color: #111111;
+}
+
+.sewer-tools6 .swatch {
+    background-color: #07B050;
+}
+
+.sewer-tools7 .swatch {
+    background-color: #02B0F0;
+}
+
+.sewer-tools8 .swatch {
+    background-color: #944095;
+}
+
+.sewer-tools9 .swatch {
+    background-color: #e84495;
+}
+
+.sewer-tools10 .swatch {
+    background-color: #eb342e;
+}
+
+.sewer-tools11 .swatch {
+    background-color: #f69831;
+}
+
+.sewer-tools12 .swatch {
+    background-color: #fff036;
+}
