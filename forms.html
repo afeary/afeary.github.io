@@ -40,6 +40,7 @@
 							<li>placeholder text: $slate4</li>
 							<li>optional tip text: 13/1/300, margin-top: 4px</li>
 							<li>if input fails validation onBlur, display error state (label and border color: $red1) and message (replaces tip text if any)</li>
+							<li>No edit permissions: background-color: $arctic2</li>
 						</ul>
 					</li>
 				</ul>
@@ -57,6 +58,7 @@
 							<li>placeholder text: $slate4</li>
 							<li>use chevron-down-circle icon as select control affordance</li>
 							<li>custom select options can include icons</li>
+							<li>No edit permissions: background-color: $arctic2, chevron-down-circle: $slate5</li>
 						</ul>
 					</li>	
 				</ul>
@@ -83,6 +85,7 @@
 						<ul>
 							<li>16px/1/500 Museo Sans Rounded $slate2</li>
 							<li>placeholder text: $slate4</li>
+							<li>No edit permissions: background-color: $arctic2</li>
 						</ul>
 					</li>
 				</ul>
@@ -210,9 +213,31 @@
 						</div>
 						<!-- end copy -->				
 						<!-- start copy -->
-						<div class="detail-block standard-input">
-							<label>Input Label</label>
-							<input type="text" />
+						<div class="detail-block standard-input not-editable">
+							<label>Input: No Permission to Edit</label>
+							<input type="text" placeholder="You can look but can't touch" />
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block not-editable">
+							<label>Select: No Permission to Edit</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="Selected Option" selected="">Can't change the selected option</option>
+									<option value="Option">Option</option>
+									<optgroup label="Option Group Label">
+										<option value="Option">Option</option>
+										<option value="Option">Option</option>
+										<option value="Option">Option</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block not-editable">
+							<label>Text Area: No Permission to Edit</label>
+							<textarea rows="4" placeholder="U Can't Touch This. Too hype can't touch this. Get me outta here. U can't touch this."></textarea>
 						</div>
 						<!-- end copy -->
 						<!-- start copy -->
