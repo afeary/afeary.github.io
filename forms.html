@@ -86,6 +86,28 @@
 						</ul>
 					</li>
 				</ul>
+				<div class="desc-header">Checkboxes:</div>
+				<ul>
+					<li>Checkbox details: 
+						<ul>
+							<li>width 20px; height 20px; border-radius 2px;</li>
+							<li>Tap Target should wrap label as well</li>
+						</ul>
+					</li>
+					<li>States: 
+						<ul>
+							<li>Active/On: border-color $teal1; background-color $teal2; content: icon-check; font-size 10px;</li>
+							<li>Inactive/Off: border-color $slate3; background-color $arctic1; box-shadow inset 0 0 6px rgba(0,0,0,0.05)</li>
+							<li>Indeterminate: border-color $teal1; background-color $teal2; content: - </li>
+						</ul>
+					</li>
+					<li>Label details: 
+						<ul>
+							<li>14px/1/500 Museo Sans Rounded $slate2</li>
+							<li>margin-left: 8px;</li>
+						</ul>
+					</li>
+				</ul>
 				<div class="desc-header">Buttons:</div>
 				<ul>
 					<li>Form buttons should never be out of the viewport, so wrap them in a form footer that is pinned to the bottom of the container</li>
@@ -191,6 +213,20 @@
 						<div class="detail-block standard-input">
 							<label>Input Label</label>
 							<input type="text" />
+						</div>
+						<!-- end copy -->
+						<!-- start copy -->
+						<div class="detail-block">
+							<i class="icon-checkbox active"></i><label class="checkbox-label">Active Item</label>	
+						</div>
+						<div class="detail-block">
+							<i class="icon-checkbox active"></i><label class="checkbox-label">Active Item with a very long name that breaks a line</label>	
+						</div>
+						<div class="detail-block">
+							<i class="icon-checkbox inactive"></i><label class="checkbox-label">Inactive Item</label>	
+						</div>
+						<div class="detail-block">
+							<i class="icon-checkbox indeterminate"></i><label class="checkbox-label">Indeterminate Item</label>	
 						</div>
 						<!-- end copy -->
 					</div>				

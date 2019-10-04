@@ -119,11 +119,11 @@ section li {
     max-width: 375px;
     border-radius: 8px;
     position: relative;
-    height: calc(100vh - 184px);
+    height: 680px;
 }
 
 .form.form-alt {
-    height: 268px;
+    height: 440px;
 }
 
 .form .form-scroll {
@@ -395,20 +395,20 @@ section li {
     -webkit-box-shadow: 0 -4px 24px rgba(0,0,0,.075);
     box-shadow: 0 -4px 24px rgba(0,0,0,.075);
     border-radius: 0 0 12px 12px;
-    padding: 16px 0 0;
+    padding: 12px 0 0;
     margin: 12px 0 0;
     text-align: center;
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 80px;
+    height: 64px;
 }
 
 .btn-pair .btn {
     position: absolute;
     min-width: 120px;
-    padding: 14px 0;
+    padding: 10px 0;
 }
 
 .btn-pair .btn-primary {
@@ -425,7 +425,70 @@ section li {
 .btn-secondary:focus, 
 .btn-secondary:hover {
     color: #109494;
-    transition: background-color .2s,border-color .2s;
+    transition: background-color 0.2s, border-color 0.2s;
     background-color: #a0d4d4;
     border-color: #40a9a9;
+}
+
+.icon-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b7bec5;
+    background-color: #fafcff;
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 1px;
+    top: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.icon-checkbox.active,
+.icon-checkbox.indeterminate {
+    border-color: #109494;
+    background-color: #40a9a9;
+}
+
+.icon-checkbox.active::before {
+    content: '\e992';
+    font-family: 'unearth', sans-serif;
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    font-size: 10px;
+    color: #fafcff;
+    z-index: 1;
+}
+
+.icon-checkbox.indeterminate::before {
+    content: '-';
+    font-family: 'museo sans rounded';
+    font-weight: 300;
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 7px;
+    font-size: 34px;
+    line-height: 0;
+    color: #fafcff;
+    z-index: 1; 
+}
+
+.icon-checkbox.inactive {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+}
+
+.form .checkbox-label {
+    display: block;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-left: 32px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
 }
