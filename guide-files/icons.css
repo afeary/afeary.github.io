@@ -157,6 +157,11 @@ li {
     margin-right: 4px;
 }
 
+.square24 .i-ft-preview {
+    width: 24px;
+    height: 24px;
+}
+
 .table-content {
     border-radius: 4px;
     border: none;
