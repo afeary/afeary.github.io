@@ -162,6 +162,11 @@ li {
     height: 24px;
 }
 
+.square28 .i-ft-preview {
+    width: 28px;
+    height: 28px;
+}
+
 .table-content {
     border-radius: 4px;
     border: none;
@@ -231,4 +236,15 @@ li {
 
 .table-content tbody td:last-child {
     border-radius: 0 4px 4px 0;
+}
+
+.table-content tbody .toolgroup {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.table-content tbody .toolgroup td {
+    border-radius: 4px;
+    font-weight: 700;
+    color: #303840;
+    padding: 12px 16px;
 }
