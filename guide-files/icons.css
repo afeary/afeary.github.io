@@ -133,7 +133,7 @@ li {
 
 .copy-btn:hover,
 .copy-btn:active {
-    background-color: #a0d4d4;
+    background-color: #dddddd;
     transition: 0.2s background-color;
 }
 
@@ -165,6 +165,13 @@ li {
 .square28 .i-ft-preview {
     width: 28px;
     height: 28px;
+}
+
+.max24 .i-ft-preview {
+    max-width: 24px;
+    max-height: 24px; 
+    width: auto;
+    height: auto;
 }
 
 .table-content {
