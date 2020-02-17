@@ -282,6 +282,70 @@ section li {
 }
 
 .form .radio {
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #303840;
+}
+
+.form .radio-opt {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 12px;
+    transition: all 0.2s;
+    text-align: left;
+    position: relative;
+}
+
+.form .radio-opt.active {
+    pointer-events: none;
+}
+
+.form .radio-circle {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #7c8e9d;
+    background-color: #fafcff;
+    margin-right: 4px;
+}
+
+.form .radio-circle::after {
+    content: '';
+    display: block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.radio-opt.active .radio-circle {
+    border: 2px solid #109494;
+}
+
+.radio-opt.active .radio-circle::after {
+    background-color: #109494;
+}
+
+.form .radio-opt-label {
+    margin-left: 28px;
+    width: calc(100% - 28px);
+    display: inline-block;
+    line-height: 1.1;
+}
+
+.form .seg-control {
     display: block;
     border: none;
     -webkit-box-shadow: inset 0 0 12px rgba(0,0,0,.075), inset 0 0 1px 1px rgba(0,0,0,.05);
@@ -298,7 +362,7 @@ section li {
     overflow: hidden;
 }
 
-.form .radio-opt {
+.form .seg-control-opt {
     display: inline-block;
     cursor: pointer;
     padding: 12px 20px;
@@ -313,28 +377,28 @@ section li {
     transition: all .2s;
 }
 
-.form .radio-opt:first-child.active {
+.form .seg-control-opt:first-child.active {
     background-color: #109494;
     border: 1px solid #0e8585;
     pointer-events: none;
     color: #fafcff;
 }
 
-.form .radio-opt.active:hover {
+.form .seg-control-opt.active:hover {
     background-color: #40a9a9;
 }
 
-.form .radio-opt:hover {   
+.form .seg-control-opt:hover {   
     background-color: rgba(255,255,255,.3);
     color: #7c8e9d;
 }
 
-.form .radio.three-opts .radio-opt {
+.form .seg-control.three-opts .seg-control-opt {
     width: 32%;
     padding: 12px 0;
 }
 
-.form .radio.three-opts .radio-opt:last-child {
+.form .seg-control.three-opts .seg-control-opt:last-child {
     border-left: 1px solid #e2e5e8;
     box-shadow: -1px 0 0 rgba(255,255,255, 0.5);
 }
