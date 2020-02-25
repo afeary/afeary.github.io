@@ -255,3 +255,9 @@ li {
     color: #303840;
     padding: 12px 16px;
 }
+
+.external #iconimage,
+.external .copy-btn,
+.external td a {
+    display: none;
+}
